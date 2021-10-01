@@ -1,7 +1,7 @@
 # Info
 Web pages with CRUD functionality
 
--Coding Bootcamp - Assignment 1 Brief 
+-Coding Bootcamp Assignment 1 Brief 
 -Last name : Pantelakis
 -First Name: Ioannis
 -Advisors: Rafaila Galanopoulou 
