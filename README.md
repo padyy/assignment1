@@ -1,5 +1,4 @@
 # Info
-assignment1
 Web pages with CRUD functionality
 
 -Coding Bootcamp - Assignment 1 Brief 
