@@ -1,0 +1,216 @@
+<!-- Coding Bootcamp - Assignment -->
+<!-- Title:  Assignment 1 Brief -->
+<!-- Last name : Pantelakis -->
+<!-- First Name: Ioannis -->
+<!-- Advisors: Rafaila Galanopoulou -->
+<!-- Html ver: 5 -->
+<!-- win10 64bit -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trainers per Courses</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="MyStyleAssigment1.css">
+        <!-- import libraries for alertify-->
+        <script src="alertify.min.js"></script>
+        <link rel="stylesheet" href="alertify.min.css"/>
+        <!--end of import libraries for alertify-->
+    </head>
+    <body>
+        <!--Bootsrap inputs-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <div class="container">
+        <!--navbar-->
+            <nav class="navbar navbar-dark " style=" background-color:  #563d7c;">
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <a class="navbar-brand" style='color:black  '>Assignment1</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link " href="Home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="Courses.html">Courses</a>
+                        <a class="nav-item nav-link" href="Trainers.html">Trainers</a>
+                        <a class="nav-item nav-link " href="Students.html">Students</a>
+                        <a class="nav-item nav-link " href="Assignments.html">Assignments</a>
+                        <a class="nav-item nav-link active" href="TrainersPerCourse.html">T.p.C</a>
+                        <a class="nav-item nav-link " href="StudentsPerCourse.html">S.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerCourse.html">A.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerStudentPerCourse.html">A.p.S.p.C</a>
+                        <a class="nav-item nav-link " href="About.html">About</a>
+                      </div>
+                    </div>
+                  </nav>
+              </nav>
+              <br>
+            <p>This is Trainer per Course page. Try the form and the functions of the table.</p>
+            <h4>Trainers per Courses</h4>
+
+            <!--Form creation with custom validation-->
+            <form class="row g-3 needs-validation" novalidate>
+        
+                <div class="container">
+                
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Trainers</label>
+                        <select name="tname" class="form-control" id="validationCustom01" required>
+                            <option selected disabled value="">Please select a trainer...</option>
+                            <option value="George Balahamis">George Balahamis</option>
+                            <option value="John Doe">John Doe</option>    
+                            <option value="Vivian Rose">Vivian Rose</option>
+                            <option value="Derry Mansell">Derry Mansell</option>
+                            <option value="Paul Dennis">Paul Dennis</option>   
+                            <option value="Elyse Monaghan">Elyse Monaghan</option>   
+                            <option value="Regan Bradford">Regan Bradford</option>   
+                            <option value="Dani Mohamed">Dani Mohamed</option>   
+                            <option value="Dianne Firth">Dianne Firth</option>   
+                            <option value="Sallie Hackett">Sallie Hackett</option>   
+                            <option value="Amelia Santiago">Amelia Santiago</option>                 
+                        </select>
+                         <div class="valid-feedback">  <!--Valid input message -->
+                         Looks good!
+                        </div>
+                        <div class="invalid-feedback">  <!--InValid input message -->
+                        Please select a valid Trainer.
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Courses</label>
+                        <select name="cname" class="form-control" id="validationCustom02" required>
+                            <option selected disabled value="">Please select a course...</option>
+                            <option value="Cp10">Cp10</option>
+                            <option value="Cp12">Cp12</option>    
+                            <option value="Cp16">Cp16</option>
+                            <option value="Cp17">Cp17</option>
+                            <option value="Cp18">Cp18</option>   
+                            <option value="Cp05">Cp05</option>   
+                            <option value="Cp13">Cp13</option>    
+               
+                        </select>
+                             <div class="valid-feedback">  <!--Valid input message -->
+                            Looks good!
+                            </div>
+                            <div class="invalid-feedback">  <!--InValid input message -->
+                            Please select a valid Course.
+                            </div>
+                    </div>
+
+                    <br>
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="form_submit"type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+      
+            
+            <!--Table Creation -->
+            <div class="row top-buffer">
+                <table class="table table-bordered data-table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Trainer</th>
+                        <th scope="col">Course</th>
+                    </tr>
+                    </thead>
+					<tbody>
+					</tbody>
+                </table>
+            </div>
+         
+        </div>       
+
+
+
+   </body>
+
+   <script> //js code
+        //function for adding data into table
+		function addData(trainer,course){
+			$(".data-table tbody").append(
+                "<tr data-trainer='" +
+                trainer +
+                "'data-course='" +
+                course +
+                "'><td>" +
+                trainer +
+                "</td><td>" +
+                course +
+                "</td><td><button class='btn btn-danger btn-lg btn-delete mr-3' type='button'>Delete</button><button class='btn btn-info btn-lg btn-edit' type='button'>Edit</button></td></tr>");
+		}
+   
+        //function-submit button-when pressed (add a new row to table or update it if there is row to be edited)
+        $("form").submit(function (e) {
+            e.preventDefault();
+            if (this.checkValidity()) { 
+				var trainer = $("select[name='tname']").val();
+				var course = $("select[name='cname']").val();
+				var edit_row = $(".data-table").find('.editting');
+                // check if button is pressed while having a row from table to be edited
+				if (edit_row.length>0){	//if row to be edited exists, update the row of table			
+					$(edit_row[0]).attr("data-trainer",trainer);
+					$(edit_row[0]).attr("data-course",course);
+					
+					$(edit_row[0]).find('td')[0].innerHTML = trainer;
+					$(edit_row[0]).find('td')[1].innerHTML = course;
+					
+					$("#form_submit").text("Submit form");
+					$("select[name='']").val("");
+					alertify.success("Row editted succesfully!");
+					edit_row.removeClass("editting");
+				}
+                // check if button is pressed from form's inputs and add to table
+				else{
+					addData(trainer,course);
+					$("select[name='']").val("");
+					alertify.success("Row added succesfully!"); //custom alert message for succesfull input via alertify library
+				}
+			}
+			else {
+				alertify.error("Mayday..Mayday!Wrong input!");
+			}
+			this.classList.add('was-validated');
+        });
+
+        // delete row from table
+        $("body").on("click", ".btn-delete", function () {
+        $(this).parents("tr").remove();
+        });
+
+        //edit row from table
+        $("body").on("click", ".btn-edit", function () {
+            $(".data-table tr").removeClass("editting");
+			$(this).closest('tr').addClass("editting");
+			var trainer = $(this).parents("tr").attr("data-trainer");
+			var course = $(this).parents("tr").attr("data-course");
+			$("select[name='tname']").focus() // focus on form and replace the defaults values when edit for a row is pressed
+			var changetrainer = document.getElementById('validationCustom01');
+			changetrainer.value = trainer ;
+			var changecourse = document.getElementById('validationCustom02');
+			changecourse.value = course ;
+			$("#form_submit").text("Update form");
+        });
+
+     
+
+        //dummy data to table when document is ready
+		$( document ).ready(function(){
+			addData("George Balahamis","Cp10");
+			addData("John Doe","Cp12");
+			addData("Vivian Rose","Cp17");
+			addData("Derry Mansell","Cp10");
+		});
+        
+       
+   </script>
+</html>
+
+

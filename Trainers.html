@@ -1,0 +1,237 @@
+<!-- Coding Bootcamp - Assignment -->
+<!-- Title:  Assignment 1 Brief -->
+<!-- Last name : Pantelakis -->
+<!-- First Name: Ioannis -->
+<!-- Advisors: Rafaila Galanopoulou -->
+<!-- Html ver: 5 -->
+<!-- win10 64bit -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trainers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="MyStyleAssigment1.css">
+        <!-- import libraries for alertify-->
+        <script src="alertify.min.js"></script>
+        <link rel="stylesheet" href="alertify.min.css"/>
+        <!--end of import libraries for alertify-->
+    </head>
+    <body>
+        <!--Bootsrap inputs-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <div class="container">
+        <!--navbar-->
+            <nav class="navbar navbar-dark " style=" background-color:  #563d7c;">
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <a class="navbar-brand" style='color:black  '>Assignment1</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link " href="Home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="Courses.html">Courses</a>
+                        <a class="nav-item nav-link active" href="Trainers.html">Trainers</a>
+                        <a class="nav-item nav-link " href="Students.html">Students</a>
+                        <a class="nav-item nav-link " href="Assignments.html">Assignments</a>
+                        <a class="nav-item nav-link " href="TrainersPerCourse.html">T.p.C</a>
+                        <a class="nav-item nav-link " href="StudentsPerCourse.html">S.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerCourse.html">A.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerStudentPerCourse.html">A.p.S.p.C</a>
+                        <a class="nav-item nav-link " href="About.html">About</a>
+                      </div>
+                    </div>
+                  </nav>
+              </nav>
+              <br>
+            <p>This is Trainer's page. Try the form and the functions of the table.</p>
+            <h4>Trainers</h4>
+
+            <!--Form creation with custom validation-->
+            <form class="row g-3 needs-validation" novalidate>
+        
+                <div class="container">
+                
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" name="fname" class="form-control input-sm" id="validationCustom01" value="Carol " placeholder="eg:Carol " required>
+                        <div class="valid-feedback"> <!--Valid input message -->
+                        Looks good!
+                        </div>
+                        <div class="invalid-feedback"> <!--InValid input message -->
+                            Please provide a valid Name.
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" name="lname" class="form-control input-sm" id="validationCustom02" value="Duggan" placeholder="eg:Duggan" required>
+                        <div class="valid-feedback">
+                        Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please provide a valid Lastname.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Course</label>
+                        <input type="text" name="cname" class="form-control" id="validationCustom03" maxlength="4" size="4"  value="Cp13" pattern="(?=.*\d)(?=.*[a-zA-Z]).{4}"  placeholder="eg:CB13" 
+                        title="Please use at least one number and one letter with max length 4" required>
+                        <div class="invalid-feedback">
+                        Please provide a valid course. 
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Subject</label>
+                        <input type="text" name="sname" class="form-control" id="validationCustom04" maxlength="30"   value="Programmer" 
+                        title="Please write the subject.Max characters:30" placeholder="Subject of trainer."required>
+                        <div class="invalid-feedback">
+                        Please provide a value for subject of trainer.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="form_submit"type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+      
+            
+            <!--Table Creation -->
+            <div class="row top-buffer">
+                <table class="table table-bordered data-table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Lastname</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Subject</th>
+                    </tr>
+                    </thead>
+					<tbody>
+					</tbody>
+                </table>
+            </div>
+         
+        </div>       
+
+
+
+   </body>
+
+   <script> //js code
+        //function for adding data into table
+		function addData(name,lastname,course,subject){
+			$(".data-table tbody").append(
+                "<tr data-name='" +
+                name +
+                "'data-lastname='" +
+                lastname +
+                "'data-course='" +
+                course +
+                "'data-subject='" +
+                subject +
+                "'><td>" +
+                name +
+                "</td><td>" +
+                lastname +
+                "</td><td>" +
+                course +
+                "</td><td>" +
+                subject +
+                "</td><td><button class='btn btn-danger btn-lg btn-delete mr-3' type='button'>Delete</button><button class='btn btn-info btn-lg btn-edit' type='button'>Edit</button></td></tr>");
+		}
+   
+        //function-submit button-when pressed (add a new row to table or update it if there is row to be edited)
+        $("form").submit(function (e) {
+            e.preventDefault();
+            if (this.checkValidity()) { 
+				var name = $("input[name='fname']").val();
+				var lastname = $("input[name='lname']").val();
+				var course = $("input[name='cname']").val();
+				var subject = $("input[name='sname']").val();
+				var edit_row = $(".data-table").find('.editting');
+                // check if button is pressed while having a row from table to be edited
+				if (edit_row.length>0){	//if row to be edited exists, update the row of table			
+					$(edit_row[0]).attr("data-name",name);
+					$(edit_row[0]).attr("data-lastname",lastname);
+					$(edit_row[0]).attr("data-course",course);
+					$(edit_row[0]).attr("data-subject",subject);
+					
+					$(edit_row[0]).find('td')[0].innerHTML = name;
+					$(edit_row[0]).find('td')[1].innerHTML = lastname;
+					$(edit_row[0]).find('td')[2].innerHTML = course;
+					$(edit_row[0]).find('td')[3].innerHTML = subject;
+					
+					$("#form_submit").text("Submit form");
+					$("input[name='']").val("");
+					alertify.success("Row editted succesfully!");
+					edit_row.removeClass("editting");
+				}
+                // check if button is pressed from form's inputs and add to table
+				else{
+					addData(name,lastname,course,subject);
+					$("input[name='']").val("");
+					alertify.success("Row added succesfully!"); //custom alert message for succesfull input via alertify library
+				}
+			}
+			else {
+				alertify.error("Mayday..Mayday!Wrong input!");
+			}
+			this.classList.add('was-validated');
+        });
+
+        // delete row from table
+        $("body").on("click", ".btn-delete", function () {
+        $(this).parents("tr").remove();
+        });
+
+        //edit row from table
+        $("body").on("click", ".btn-edit", function () {
+            $(".data-table tr").removeClass("editting");
+			$(this).closest('tr').addClass("editting");
+			var name = $(this).parents("tr").attr("data-name");
+			var lastname = $(this).parents("tr").attr("data-lastname");
+			var course = $(this).parents("tr").attr("data-course");
+			var subject = $(this).parents("tr").attr("data-subject");
+			$("input[name='fname']").focus() // focus on form and replace the defaults values when edit for a row is pressed
+			var changename = document.getElementById('validationCustom01');
+			changename.value = name ;
+			var changelastname = document.getElementById('validationCustom02');
+			changelastname.value = lastname ;
+			var changecourse = document.getElementById('validationCustom03');
+			changecourse.value = course ;
+			var changesubject = document.getElementById('validationCustom04');
+			changesubject.value = subject ;
+			$("#form_submit").text("Update form");
+        });
+
+     
+
+        //dummy data to table when document is ready
+		$( document ).ready(function(){
+			addData("George","Balahamis","Cp10","Java Specialist");
+			addData("John","Doe","Cp12","Python Master");
+			addData("Vivian","Rose","Cp17","Javascript Software Engineer","");
+			addData("Derry","Mansell","Cp10","C# developer");
+		});
+        
+       
+   </script>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Courses</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="MyStyleAssigment1.css">
+        <!-- import libraries for alertify-->
+        <script src="alertify.min.js"></script>
+        <link rel="stylesheet" href="alertify.min.css"/>
+        <!--end of import libraries for alertify-->
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <div class="container">
+        <!--navbar-->
+            <nav class="navbar navbar-dark " style=" background-color:  #563d7c;">
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <a class="navbar-brand" style='color:black  '>Assignment1</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                      <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="Courses.html">Courses</a>
+                        <a class="nav-item nav-link" href="Trainers.html">Trainers</a>
+                        <a class="nav-item nav-link " href="Students.html">Students</a>
+                        <a class="nav-item nav-link " href="Assignments.html">Assignments</a>
+                        <a class="nav-item nav-link " href="TrainersPerCourse.html">T.p.C</a>
+                        <a class="nav-item nav-link " href="StudentsPerCourse.html">S.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerCourse.html">A.p.C</a>
+                        <a class="nav-item nav-link " href="AssignmentsPerStudentPerCourse.html">A.p.S.p.C</a>
+                        <a class="nav-item nav-link " href="About.html">About</a>
+                      </div>
+                    </div>
+                  </nav>
+              </nav>
+              <br>
+              <p>This is Course's page. Try the form and the functions of the table.</p>
+              <h4>Courses</h4>
+
+            <!--Form creation with custom validation-->
+            <form class="row g-3 needs-validation" novalidate>
+        
+                <div class="container">
+                
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Language</label>
+                        <select name="lname" class="form-control" id="validationCustom01" required>
+                        <option selected disabled value="">Please select a language...</option>
+                        <option value="Python">Python</option>
+                        <option value="C#">C#</option>    
+                        <option value="Java">Java</option>
+                        <option value="Javascript">Javascript</option>                   
+                        </select>
+                         <div class="valid-feedback">  <!--Valid input message -->
+                        Looks good!
+                        </div>
+                        <div class="invalid-feedback">  <!--InValid input message -->
+                        Please select a valid language.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Type</label>
+                        <select name="tyname" class="form-control" id="validationCustom02" required>
+                        <option selected disabled value="">Please select a type...</option>
+                        <option value="Part-Time">Part-Time</option>
+                        <option value="Full-Time">Full-Time</option>        
+                        </select>
+                         <div class="valid-feedback">  <!--Valid input message -->
+                        Looks good!
+                        </div>
+                        <div class="invalid-feedback">  <!--InValid input message -->
+                        Please select a valid type.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Title</label>
+                        <input type="text" name="tiname" class="form-control" id="validationCustom03" maxlength="4" size="4"  value="Cp13" pattern="(?=.*\d)(?=.*[a-zA-Z]).{4}"  placeholder="eg:CB13" 
+                        title="Please use at least one number and one letter with max length 4" required>
+                        <div class="invalid-feedback">
+                        Please provide a valid title. 
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Description</label>
+                        <input type="text" name="dname" class="form-control" id="validationCustom04" maxlength="60"   value="Hey.I am the description of the course." 
+                        title="Please write the description.Max characters:60" placeholder="Description of course."required>
+                        <div class="invalid-feedback">
+                        Please provide a valid description. 
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+
+                    
+                    <br>
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="form_submit"type="submit">Submit form</button>
+                    </div>
+                </div>
+            </form>
+
+            <!--Table Creation -->
+            <div class="row top-buffer">
+                <table class="table table-bordered data-table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Language</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                    </thead>
+					<tbody>
+					</tbody>
+                </table>
+            </div>
+          
+        </div>       
+
+
+
+   </body>
+
+   <script>//js code
+        //function for adding data into table
+		function addData(language,type,title,description){
+			$(".data-table tbody").append(
+                "<tr data-language='" +
+                language +
+                "'data-type='" +
+                type +
+                "'data-title='" +
+                title +
+                "'data-description='" +
+                description +
+                "'><td>" +
+                language +
+                "</td><td>" +
+                type +
+                "</td><td>" +
+                title +
+                "</td><td>" +
+                description +
+                "</td><td><button class='btn btn-danger btn-lg btn-delete mr-3' type='button'>Delete</button><button class='btn btn-info btn-lg btn-edit' type='button'>Edit</button></td></tr>");
+		}
+   
+        //function-submit button-when pressed (add a new row to table or update it if there is row to be edited)
+        $("form").submit(function (e) {
+            e.preventDefault();
+            if (this.checkValidity()) { 
+				var language = $("select[name='lname']").val();
+				var type = $("select[name='tyname']").val();
+				var title = $("input[name='tiname']").val();
+				var description = $("input[name='dname']").val();
+				var edit_row = $(".data-table").find('.editting');
+                // check if button is pressed while having a row from table to be edited
+				if (edit_row.length>0){	//if row to be edited exists, update the row of table							
+					$(edit_row[0]).attr("data-language",language);
+					$(edit_row[0]).attr("data-type",type);
+					$(edit_row[0]).attr("data-title",title);
+					$(edit_row[0]).attr("data-description",description);
+					
+					$(edit_row[0]).find('td')[0].innerHTML = language;
+					$(edit_row[0]).find('td')[1].innerHTML = type;
+					$(edit_row[0]).find('td')[2].innerHTML = title;
+					$(edit_row[0]).find('td')[3].innerHTML = description;
+					
+					$("#form_submit").text("Submit form");
+					$("input[name='']").val("");
+					alertify.success("Row editted succesfully!");
+					edit_row.removeClass("editting")
+				}
+                // check if button is pressed from form's inputs and add to table
+				else{
+					addData(language,type,title,description);
+					$("input[name='']").val("");
+					alertify.success("Row added succesfully!"); //custom alert message for succesfull input via alertify library
+				}
+			}
+			else {
+				alertify.error("Mayday..Mayday!Wrong input!");
+			}
+			this.classList.add('was-validated');
+        });
+
+        // delete row from table
+        $("body").on("click", ".btn-delete", function () {
+        $(this).parents("tr").remove();
+        });
+
+        //edit row from table
+        $("body").on("click", ".btn-edit", function () {
+            $(".data-table tr").removeClass("editting");
+			$(this).closest('tr').addClass("editting");
+			var language = $(this).parents("tr").attr("data-language");
+			var type = $(this).parents("tr").attr("data-type");
+			var title = $(this).parents("tr").attr("data-title");
+			var description = $(this).parents("tr").attr("data-description");
+			$("select[name='lname']").focus() // focus on form and replace the defaults values when edit for a row is pressed
+			var changelanguage = document.getElementById('validationCustom01');
+			changelanguage.value = language ;
+			var changetype = document.getElementById('validationCustom02');
+			changetype.value = type ;
+			var changetitle = document.getElementById('validationCustom03');
+			changetitle.value = title ;
+			var changedescription = document.getElementById('validationCustom04');
+			changedescription.value = description ;
+			$("#form_submit").text("Update form");
+        });
+
+
+        //dummy data to table when document is ready
+		$( document ).ready(function(){
+			addData("Javascript","Full-Time","Cp10","Javascript main Course!");
+			addData("C#","Part-Time","Cp12","C# Junior class.");
+			addData("Python","Part-Time","Cp16","Python full stack developer class");
+			addData("Java","Full-Time","Cp10","Java Masters");
+		});
+        
+       
+   </script>
+</html>
