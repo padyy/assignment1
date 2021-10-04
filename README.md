@@ -1,28 +1,28 @@
 # Info
 Web pages with CRUD functionality
 
--Coding Bootcamp Assignment 1 Brief 
--Last name : Pantelakis
--First Name: Ioannis
--Advisors: Rafaila Galanopoulou 
--Html ver: 5
--win: win10 64bit
+Coding Bootcamp Assignment 1 Brief 
+/Last name : Pantelakis
+/First Name: Ioannis
+/Advisors: Rafaila Galanopoulou 
+/Html ver: 5
+/win: win10 64bit
 
 
 # Manual
  
 This package is about assignment1_brief, using html5,css and javascript.
 It includes: 10 html pages :
--Courses.html ,
--Trainers.html ,
--Students.html ,
--Assignment.html ,
--TrainersPerCourse.html ,
--StudentsPerCourse.html ,
--AssignmentsPerCourse.html,
--AssignmentsPerStudentPerCourse.html ,
--Home.html ,
--About.html .
+Courses.html ,
+/Trainers.html ,
+/Students.html ,
+/Assignment.html ,
+/TrainersPerCourse.html ,
+/StudentsPerCourse.html ,
+/AssignmentsPerCourse.html,
+/AssignmentsPerStudentPerCourse.html ,
+/Home.html ,
+/About.html .
 
 It also includes a css file called: 
 -MyStyleAssigment1.css
