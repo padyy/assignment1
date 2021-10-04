@@ -14,22 +14,22 @@ Coding Bootcamp Assignment 1 Brief
 This package is about assignment1_brief, using html5,css and javascript.
 It includes: 10 html pages :
 Courses.html ,
-/Trainers.html ,
-/Students.html ,
-/Assignment.html ,
-/TrainersPerCourse.html ,
-/StudentsPerCourse.html ,
-/AssignmentsPerCourse.html,
-/AssignmentsPerStudentPerCourse.html ,
-/Home.html ,
-/About.html .
+Trainers.html ,
+Students.html ,
+Assignment.html ,
+TrainersPerCourse.html ,
+StudentsPerCourse.html ,
+AssignmentsPerCourse.html,
+AssignmentsPerStudentPerCourse.html ,
+Home.html ,
+About.html .
 
 It also includes a css file called: 
--MyStyleAssigment1.css
+MyStyleAssigment1.css
 
 Moreover it includes 2 extra files for a library that is being used called:
--alertify.min.css
--alertify.min.js
+alertify.min.css,
+alertify.min.js
 These files are needed for using alertify for custom pop up messages that are used for the validation.
 Finaly there is a 'img' folder, having all the needed images for the project.
 
